@@ -1,0 +1,8 @@
+dn: cn=Anna Pou,ou=usuaris,dc=edt,dc=org
+changetype: modify
+add: mail
+mail: 03@aa.eei
+-
+replace: homePhone
+homePhone: 1212121212
+
