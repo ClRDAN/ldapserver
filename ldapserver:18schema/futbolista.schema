@@ -1,0 +1,9 @@
+#schema futbolista
+# equipo, dorsal, web, foto, lesionado
+# @edt ASIX M06 2018-19
+
+attribute type (1.1.2.1.1 NAME 'xequip'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE)
