@@ -1,0 +1,8 @@
+dn: x-name=nick,ou=maquines,dc=edt,dc=org
+objectClass: x-futbolista
+x-name: nick
+x-equip: barca
+x-dorsal: 13
+x-lesionat: TRUE
+x-foto:< file:///opt/docker/foto.jpg
+x-webpage: http://www.edt.org

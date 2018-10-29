@@ -1,0 +1,6 @@
+dn: cn=messi,ou=maquines,dc=edt,dc=org
+changetype: modify
+replace: x-foto
+x-foto:< file:///opt/docker/foto.jpg
+
+

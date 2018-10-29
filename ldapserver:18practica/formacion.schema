@@ -1,0 +1,39 @@
+# schema master:
+#            finalizado(bool), titulo(limitado a 40 caracteres), centro de estudios (web), foto, nota(integer)
+# @edt ASIX-M06 2018-2019
+
+attributetype (1.1.2.1.1 NAME 'xtitulo'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{40}
+  SINGLE-VALUE )
+
+attributetype (1.1.2.1.2 NAME 'xfinalizado'
+  DESC 'finalizado TRUE'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  SINGLE-VALUE )
+
+attributetype (1.1.2.1.3 NAME 'xnota'
+  DESC 'nota del master'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+  EQUALITY integerMatch
+  SINGLE-VALUE )
+
+attributetype (1.1.2.1.3 NAME 'xwebcentro'
+  DESC 'web del centro de estudios'
+  EQUALITY caseExactMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15)
+
+attributetype (1.1.2.1.4 NAME 'xfoto'
+  DESC 'foto del master'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.40)
+
+objectclass (1.1.2.2.1 NAME 'xformacion'
+  DESC 'estudios de personas'
+  SUP inetOrgPerson
+  STRUCTURAL
+  MUST xequip
+  MAY ( xdorsal $ xweb $ xfoto $ xlesionat) )
+
+
+

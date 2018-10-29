@@ -1,0 +1,11 @@
+dn: cn=nick,ou=maquines,dc=edt,dc=org
+objectClass: x-futbolista
+description: lo nick lo crack del fumbol
+x-equip: barca
+x-dorsal: 13
+x-lesionat: TRUE
+cn: nick
+cn: lo crack
+sn: lo de la fila de la tania
+homePhone: 111-11-11
+

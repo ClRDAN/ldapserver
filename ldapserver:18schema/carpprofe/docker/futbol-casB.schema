@@ -1,0 +1,65 @@
+# Futbol schema
+# @edt ASIX-M06 2017-2018
+# Gener 2018
+# Creació objecte futbolista amb atributs
+# STRUCTURAL derivat de TOP (standalone)
+# -----------------------------------------------------
+
+attributeType (
+ 1.1.2.1.1.1 
+ NAME ( 'x-equip' 'equip' )
+ DESC 'Equip al que pertamy al jugador'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15{128}
+ SINGLE-VALUE
+ )
+
+attributeType (
+ 1.1.2.1.1.2
+ NAME ( 'x-dorsal' 'dorsal' )
+ DESC 'dorsal del jugador en equip'
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+ SINGLE-VALUE
+ )
+
+attributeType (
+ 1.1.2.1.1.3
+ NAME ( 'x-webpage' 'webpage' )
+ DESC 'pagina web particular del jugador'
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+ )
+
+attributeType (
+ 1.1.2.1.1.4
+ NAME ( 'x-foto' 'foto' )
+ DESC 'foto del jugador'
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.40
+ )
+
+attributeType (
+ 1.1.2.1.1.5
+ NAME ( 'x-lesionat' 'lesionat' )
+ DESC 'boolea de si esta o no lesionat'
+ EQUALITY booleanMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+ )
+
+attributeType (
+ 1.1.2.1.1.6
+ NAME ( 'x-name' 'futname' )
+ DESC 'nom del futbolista'
+ SUP name
+ SINGLE-VALUE
+ )
+
+objectclass (
+ 1.1.2.2.1.1 
+ NAME ( 'x-futbolista' 'futbolista' 'fut' )
+ DESC 'Objecte que emmagatzema un futbolista'
+ SUP TOP
+ STRUCTURAL
+ MUST ( x-equip $ x-name )
+ MAY ( x-dorsal $ x-webpage $ x-foto $ x-lesionat )
+ )
+
+

@@ -1,0 +1,20 @@
+dn: o=depinf,ou=maquines,dc=edt,dc=org
+objectclass: organization
+objectclass: x-my-data
+o: depinf
+description: organitzacio depinf amb un objectclass
+ compost de organization i x-my-data
+ camp obligatoris o i description
+countryName: uk
+localityName: barcelona
+
+dn: cn=Persona01,ou=maquines,dc=edt,dc=org
+objectclass: x-my-person
+cn: Persona01
+sn: paio01
+description: objecte x-my-data derivat de inetorgpersona
+ els camps must son cn i sn derivats de Person
+ coma camp must del derivat hi ha la desciption
+countryName: uk
+localityName: barcelona
+

@@ -1,0 +1,16 @@
+dn: cn=user09,ou=usuaris,dc=edt,dc=org
+changetype: modify
+add: description
+description: segona descripcio de l'usuari
+-
+replace: mail
+mail: renou@email.cat
+-
+delete: homePhone
+
+dn: cn=user09,ou=usuaris,dc=edt,dc=org
+changetype: modrdn
+newrdn: cn=superuser09
+deleteoldrdn:0
+
+
