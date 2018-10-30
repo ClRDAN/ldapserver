@@ -1,0 +1,1 @@
+- restringir acceso en atributos que se encuentran en distintos puntos del arbol (homePhone esta en usuaris y clients)
