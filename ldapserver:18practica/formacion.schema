@@ -27,8 +27,7 @@ attributetype (1.1.2.1.4 NAME 'xwebcentro'
 
 attributetype (1.1.2.1.5 NAME 'xfoto'
   DESC 'foto del master'
-  SYNTAX 1.3.6.1.4.1.1466.115.121.1.40
-  SINGLE VALUE )
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
 
 objectclass (1.1.2.2.1 NAME 'xmaster'
   DESC 'estudios de personas'

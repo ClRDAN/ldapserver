@@ -33,8 +33,6 @@ objectclass: xmaster
 cn: Pau Pou
 cn: Pauet Pou
 sn: Pou
-homephone: 555-222-2220
-mail: pau@edt.org
 description: Watch out for this guy
 ou: Profes
 uid: pau
@@ -51,6 +49,7 @@ xfoto: ///opt/docker/foto1.jpg
 dn: uid=pere,ou=usuaris,dc=edt,dc=org
 objectclass: posixAccount
 objectclass: inetOrgPerson
+objectclass: xmaster
 cn: Pere Pou
 sn: Pou
 homephone: 555-222-2221
