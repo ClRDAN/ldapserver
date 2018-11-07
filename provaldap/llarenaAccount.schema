@@ -1,0 +1,28 @@
+# schema master:
+#           delictes, anysCondemna, galeres 
+# @edt ASIX-M06 2018-2019
+
+attributetype (1.1.2.1.10 NAME 'x-delictes'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype (1.1.2.1.1.11 NAME 'x-anysComdemna'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
+  EQUALITY integerMatch
+  SINGLE-VALUE )
+
+attributetype (1.1.2.1.1.12 NAME 'x-galeres'
+  DESC 'Condenado a galeras TRUE'
+  EQUALITY booleanMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.7
+  SINGLE-VALUE )
+
+objectclass (1.1.2.2.2 NAME 'x-llarenaAccount'
+  DESC 'fichados'
+  SUP top AUXILIARY
+  MUST x-delictes
+  MAY ( x-anysComdemna $ x-galeres ) )
+
+
+

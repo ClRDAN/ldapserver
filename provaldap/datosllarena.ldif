@@ -1,0 +1,21 @@
+dn: x-idcat=100,ou=socis,dc=aitor,dc=cat
+changetype: modify
+add: x-delictes
+x-delictes: alñfdjalñ sdfj
+-
+add: x-anysComdemna
+x-anysComdemna: 3
+-
+add: x-galeres
+x-galeres: False
+
+dn: x-idcat=101,ou=socis,dc=aitor,dc=cat
+changetype: modify
+add: x-delictes
+x-delictes: alñjdflñasjkdfñakls dfjñalsk djflña 
+-
+add: x-anysComdemna
+x-anysComdemna: 2000
+-
+add: x-galeres
+x-galeres: False

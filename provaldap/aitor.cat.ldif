@@ -1,0 +1,47 @@
+dn: dc=aitor,dc=cat
+dc: aitor
+description: asociacion indepe
+objectClass: dcObject
+objectClass: organization
+o: aitor.cat
+
+dn: ou=socis,dc=aitor,dc=cat
+ou: socis
+description: socios indepes
+objectclass: organizationalunit
+
+dn: ou=simpatitzants,dc=aitor,dc=cat
+ou: simpatitzants
+description: indepes pero poco
+objectclass: organizationalunit
+
+dn: x-idcat=100,ou=socis,dc=aitor,dc=cat
+objectclass: x-indepeOrgPerson
+objectclass: x-llarenaAccount
+ou: socis
+cn: manuel
+sn: valls 
+x-idcat: pau
+x-sardanes: True
+x-lema: Otra ronda
+
+dn: x-idcat=101,ou=socis,dc=aitor,dc=cat
+objectclass: x-indepeOrgPerson
+objectclass: x-llarenaAccount
+ou: socis 
+cn: pere
+sn: pou
+x-idcat: anna
+x-sardanes: False
+x-lema: Otra mas
+
+dn: x-idcat=102,ou=socis,dc=aitor,dc=cat
+objectclass: x-indepeOrgPerson
+ou: socis 
+cn: francesc
+sn: macia
+x-idcat: pere
+x-sardanes: False
+x-lema: la penultima
+
+
