@@ -1,0 +1,38 @@
+dn: dc=asofrik,dc=org
+dc: asofrik
+description: asociacion de ocio alternativo
+objectClass: dcObject
+objectClass: organization
+o: asofrik.org
+
+dn: ou=inscritos,dc=asofrik,dc=org
+ou: inscritos
+description: listado de inscritos a la asamblea
+objectClass: organizationalunit
+
+dn: xalias=xoxso,ou=inscritos,dc=asofrik,dc=org
+objectClass: xfriki
+xalias: xoxso
+xnombre: carles
+xapellido: lotreball
+xdireccion: 10, Downing Street
+xmail: lokinki@asofrik.org
+xfoto2: ///opt/docker/myphoto.jpg
+xsocio: FALSE
+xfrikismo: 88
+xvicio: warhammer
+xvicio: mi pequeño poni
+xvicio: star wars
+
+dn: xalias=sosfou,=inscritos,dc=asofrik,dc=org
+objectClass: xfriki
+xalias: sosfou
+xnombre: carlas
+xapellido: lotrsall
+xdireccion: 11, Downing Street
+xmail: lokin@asofrik.org
+xfoto2: ///opt/docker/myphoto.jpg
+xsocio: TRUE
+xfrikismo: 44
+xvicio: warhammer
+xvicio: star wars

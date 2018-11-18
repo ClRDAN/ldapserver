@@ -3,8 +3,9 @@
 # @edt ASIX-M06 2018-2019
 
 attributetype (1.1.2.1.1 NAME 'x-idcat'
-  EQUALITY integerMatch
-  SYNTAX 1.3.6.1.4.1.1466.115.121.1.27)
+  EQUALITY numericStringMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.36
+  SINGLE-VALUE)
 
 attributetype (1.1.2.1.2 NAME 'x-sardanes'
   DESC 'sardanes TRUE'

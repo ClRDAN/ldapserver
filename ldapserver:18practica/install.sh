@@ -4,6 +4,10 @@
 #----------------------------
 rm -rf /etc/openldap/slapd.d/*
 rm -rf /var/lib/ldap/*
+if [ -d "/var/lib/ldapfrik" ]
+then rm -rf /var/lib/ldapfrik/*
+else mkdir /var/lib/ldapfrik
+fi
 cp /opt/docker/DB_CONFIG /var/lib/ldap/
 slaptest -f /opt/docker/slapd.conf -F /etc/openldap/slapd.d
 slapadd -F /etc/openldap/slapd.d -l /opt/docker/edt.ldif

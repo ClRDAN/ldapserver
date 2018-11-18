@@ -1,0 +1,3 @@
+dn: uid=marta,ou=usuaris,dc=edt,dc=org
+changetype: modify
+delete: mail
